@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TodoComponentes - Tu portal de componentes informáticos</title>
+    <link rel="stylesheet" href="css/bulma.min.css">
+    <link rel="stylesheet" href="css/inicio.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    
+    <!-- Navegación -->
+    <nav class="navbar is-primary" role="navigation" aria-label="main navigation">
+        <div class="container">
+            <div class="navbar-brand">
+                <a class="navbar-item" href="#">
+                    <strong>TodoComponentes</strong>
+                </a>
+
+                <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false"
+                    data-target="navbarBasicExample">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+
+            <div id="navbarBasicExample" class="navbar-menu">
+                <div class="navbar-start">
+                    <a class="navbar-item" href="inicio.html">
+                        Inicio
+                    </a>
+
+                    <a class="navbar-item" href="sobrenosotros.html">
+                        Sobre Nosotros
+                    </a>
+
+                    <a class="navbar-item" href="servicios.html">
+                        Servicios
+                    </a>
+
+                    <a class="navbar-item" href="contáctanos.html">
+                        Contáctanos
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="full-screen-image">
+        <!-- No necesitas agregar contenido aquí, la imagen será establecida como fondo -->
+    </div>
+   
+    <script>
+        // Script para el desplazamiento suave al hacer clic en los enlaces del menú
+        document.addEventListener("DOMContentLoaded", function () {
+            const links = document.querySelectorAll('a[href^="#"]');
+            for (const link of links) {
+                link.addEventListener("click", clickHandler);
+            }
+
+            function clickHandler(e) {
+                e.preventDefault();
+                const href = this.getAttribute("href");
+                const offsetTop = document.querySelector(href).offsetTop;
+
+                scroll({
+                    top: offsetTop,
+                    behavior: "smooth"
+                });
+            }
+        });
+    </script>
+    <script src="js/script.js"></script>
+
+    <br>
+    <br>
+
+    <div class="container">
+        <div class="box-container">
+            <div class="box">
+                <h2 style="color: #003366; font-weight: bold;">Servicios</h2>
+                <p>
+                    Los servicios que ofrecemos en todo componentes van desde comprar las piezas o periféricos que ya no uses hasta venderte nuevas y flagrantes piezas para tu ordenador, si quieres saber más adéntrate en nuestra web.
+                </p>
+                <img src="img/1605375.png" alt=Imagen1 style="width: 10%; height: auto;">
+            </div>
+            <div class="box">
+                <h2 style="color: #003366; font-weight: bold;">Ubicacion</h2>
+                <p>Aunque nuestros servicios se den de manera online mediante nuestra web y aplicación, nos puedes encontrar nuestra oficina en Olesa de montserrat calle lluisguijaner 73.</p>
+                <img src="img/vector60-6774-01.jpg" alt="Imagen 2" style="width: 10%; height: auto;">
+            </div>
+        </div>
+    </div>
+
+
+    <br>
+    <br>
+
+</body>
+
+</html>
