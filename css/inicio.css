@@ -1,0 +1,104 @@
+/* imagen index */
+
+body {
+    background-image: url(../img/fondoazul.jpeg); 
+    background-size: cover; 
+    background-position: center; 
+    width: 100vw; 
+    height: 100vh; 
+}
+/* Estilos personalizados */
+
+/* Estilo para el encabezado de la página */
+.title {
+    color: #3273dc; 
+}
+
+/* Estilo para los subtitulos */
+
+.subtitle {
+    font-weight: bold; 
+    color: #1e3a8a; 
+}
+
+/* Estilo para el menú de navegación */
+.navbar {
+    background-color: #3273dc; 
+}
+
+.navbar-item {
+    color: #ffffff;
+}
+
+/* Estilo para los enlaces activos */
+.navbar-item.is-active {
+    background-color: #ffffff; 
+    color: #3273dc; 
+}
+
+/* Estilo para las secciones */
+.section {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+/* Estilo para los títulos de sección */
+.section .title {
+    color: #3273dc; 
+}
+
+/* Estilo para los campos de formulario */
+.input {
+    border-color: #3273dc;
+}
+
+/* Estilo para los botones */
+.button {
+    background-color: #3273dc; 
+    color: #ffffff; 
+}
+
+/* Estilo para los botones al pasar el ratón */
+.button:hover {
+    background-color: #276bb0; 
+}
+
+/* estilos de la barra */
+
+.navbar-bottom {
+    display: none; 
+}
+
+
+/* Estilo general para el carrusel */
+.carousel {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+/* Estilo para cada imagen del carrusel */
+.carousel-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 5px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); 
+    transition: transform 0.3s ease; 
+}
+
+.carousel-item img:hover {
+    transform: scale(1.05); 
+}
+
+.box-container {
+
+    align-items: center;
+    width: 100%;
+    flex: 1;
+}
+
+.box {
+    color: rgb(0, 0, 0);
+    text-align: center;
+}
